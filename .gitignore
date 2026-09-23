@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Build output — rebuild with `npm run build`
+build/
+
+# Environment / secrets — never commit
+.env
+.env.*
+!.env.example
+
+# Token caches (MSAL device-code tokens)
+msal-cache.json
+*.msal-cache.json
+.outlook-mcp/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/

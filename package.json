@@ -1,0 +1,58 @@
+{
+  "name": "outlook-mcp-inworkgroup",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A minimal, draft-first MCP server for Microsoft Outlook / Microsoft 365 work mailboxes — read mail, write drafts, never sends by default. Microsoft Graph + device-code auth, no client secret.",
+  "main": "build/server.js",
+  "bin": {
+    "outlook-mcp-inworkgroup": "build/server.js"
+  },
+  "files": [
+    "build",
+    "README.md",
+    "README.en.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/server.js",
+    "dev": "tsc --watch",
+    "login": "node login.mjs"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "outlook",
+    "microsoft-graph",
+    "microsoft-365",
+    "office-365",
+    "email",
+    "draft",
+    "calendar",
+    "device-code",
+    "claude"
+  ],
+  "author": "carycracker",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carycracker/Outlook-MCP-inworkgroup.git"
+  },
+  "homepage": "https://github.com/carycracker/Outlook-MCP-inworkgroup#readme",
+  "bugs": {
+    "url": "https://github.com/carycracker/Outlook-MCP-inworkgroup/issues"
+  },
+  "dependencies": {
+    "@azure/msal-node": "6.0.1",
+    "@modelcontextprotocol/sdk": "1.30.0",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "typescript": "^7.0.2"
+  }
+}
